@@ -5,23 +5,23 @@ It supports both mobile and desktop version and contains photo gallery and perso
 
 Mobile Version:
 
-![image](https://github.com/aaronzguan/aaronguan.com/blob/master/demo/download.jpeg)
+![image](https://github.com/aaronzguan/aaronzguan.github.io/blob/master/demo/download.jpeg)
 
 Desktop Version:
 
-![image](https://github.com/aaronzguan/aaronguan.com/blob/master/demo/index.png)
+![image](https://github.com/aaronzguan/aaronzguan.github.io/blob/master/demo/index.png)
 
 Photo Gallery:
 
-![image](https://github.com/aaronzguan/aaronguan.com/blob/master/demo/photo_gallery.png)
+![image](https://github.com/aaronzguan/aaronzguan.github.io/blob/master/demo/photo_gallery.png)
 
 Post:
 
-![image](https://github.com/aaronzguan/aaronguan.com/blob/master/demo/post.png)
+![image](https://github.com/aaronzguan/aaronzguan.github.io/blob/master/demo/post.png)
 
 Blog:
 
-![image](https://github.com/aaronzguan/aaronguan.com/blob/master/demo/blog.png)
+![image](https://github.com/aaronzguan/aaronzguan.github.io/blob/master/demo/blog.png)
 
 
   
