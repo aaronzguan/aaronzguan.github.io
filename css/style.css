@@ -31,6 +31,10 @@ a {
     outline: none;
     text-decoration: none !important; }
 
+a:not([href]) {
+     cursor: pointer;
+}
+
 p {
   margin-bottom: 1.5em; }
 
@@ -942,9 +946,11 @@ body.offcanvas {
   .work-menu span:first-child {
     margin-left: 0; }
   .work-menu span a {
-    color: #000; }
+    color: #000;
+    cursor: pointer;}
     .work-menu span a.active {
-      color: #2c98f0; }
+      color: #2c98f0; 
+      }
 
 .project {
   background-size: cover;
