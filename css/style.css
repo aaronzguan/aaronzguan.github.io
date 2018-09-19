@@ -69,6 +69,69 @@ Image Gallery
   max-width: 100%;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery cell {
+  display: inline-block;
+  margin-bottom: 8px;
+  width: calc(50% - 4px);
+  margin-right: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+.gallery cell:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 50em) {
+  .gallery cell {
+    width: calc(45% - 4px);
+  }
+  
+  .gallery cell:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+  
+  .gallery cell:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+.gallery figure {
+    margin: 0;
+    overflow: hidden;
+    margin-bottom: 2.5em;
+    float: left;
+    width: 100%; 
+}
+
+.gallery figcaption {
+    font-size: 15px;
+    width: 80%;
+    margin: 20px auto 0px auto;
+    color: #b3b3b3;
+    font-style: italic;
+    font-family: "Quicksand", Arial, sans-serif;}
+@media screen and (max-width: 480px) {
+      figure figcaption {
+        width: 100%; } }
+
+.gallery img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+    overflow: hidden;
+}
+
+
+
 
 p {
   margin-bottom: 1.5em; }
@@ -83,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 figure {
   margin-bottom: 2.5em;
   float: left;
-  width: 100%; }
+  width: 100%;}
   figure figcaption {
     font-size: 16px;
     width: 80%;
