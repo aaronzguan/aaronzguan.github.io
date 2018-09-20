@@ -145,8 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 
 figure {
   margin-bottom: 2.5em;
-  float: left;
-  width: 100%;}
+  position: relative;}
   figure figcaption {
     font-size: 16px;
     width: 80%;
@@ -157,6 +156,21 @@ figure {
     @media screen and (max-width: 480px) {
       figure figcaption {
         width: 100%; } }
+
+img{
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+iframe{
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
 
 ::-webkit-selection {
   color: #fff;
