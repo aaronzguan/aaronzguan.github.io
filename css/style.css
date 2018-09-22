@@ -145,7 +145,8 @@ h1, h2, h3, h4, h5, h6 {
 
 figure {
   margin-bottom: 2.5em;
-  position: relative;}
+  position: relative;
+}
   figure figcaption {
     font-size: 16px;
     width: 80%;
@@ -162,7 +163,7 @@ img{
     display: block;
     margin: 0 auto;
     max-height: 100%;
-    max-width: 100%;
+    max-width: 80%;
 }
 iframe{
     padding: 0;
