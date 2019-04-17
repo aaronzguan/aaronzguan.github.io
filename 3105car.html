@@ -73,25 +73,46 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-5">
 					<div class="heading">
-						<h3><b>Mecanum Wheel Robot Car</b></h3>
+						<h3><b>STM32 Robot Car</b></h3>
                         <span class="heading-meta">The Hong Kong Polytechnic University<br>Hong Kong</span>
                         <br>
-                        <span><a class="downlad-btn" href="https://github.com/aaronzguan/Android-based-Mecanum-Wheel-Robot-Car">Source Code</a></span>
+                        <span><a class="downlad-btn" href="https://github.com/aaronzguan/STM32F103-Robot-Car">Source Code</a></span>
 					</div>
+                
 				</div><!-- col-sm-3 -->
                 
-                <div class="margin-b-50" align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/ALZCfhjqnJk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+                <div class="margin-b-50" align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/Mg3T8POqKUI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 				<div class="col-sm-12 col-md-9">
-					<p class="margin-b-50">Developed Android-based Bluetooth-controlled Mecanum wheel robot car, which enables user to control its orientation in 360 <sup>°</sup>. Responsible for embedded system, MCU prgramming and Bluetooth communication. Assisted with PID control programming.</p>
-				</div><!-- col-sm-9 -->
-                
-                <div class="grid">
-                    <img src="images/project/mecanumcar/1.JPG">
-                    <img src="images/project/mecanumcar/2.jpg">
-                    <img src="images/project/mecanumcar/3.jpg">
-                    <img src="images/project/mecanumcar/4.jpg">
+					<p class="margin-b-30">This robot car is a DC-motor-driven two-wheel robot car with a mobile power bank as power source, which is designed for handling multiple missions including following specific tracks and locating objects through the WIFI communication. It is built based on the STM32F103RB Microcontroller Unit and it has a LED board, a floor board, and a main board. LED board is equiped with 18 Infra-red LED which can illuminate the floor with infra-red light when it is powered up. The reflected light from the floor is absorbed by the photo transistors on the floor board, which can tell whether the robot car is on the track or not.</p>
+                    <p class="margin-b-30">This robot car can complete three tasks:</p>
+                     <ul class="margin-b-50">
+                         <li><b>Track Follower:</b> The robot car can follow dark tracks automatically by using the information collected from the Floor Board Infra-Red (IR) photo transistors.</li>
+                         <li><b>Hit Three Balls:</b> The car can automatically move three balls to a green zone by locating the position of the balls and car through WIFI communication.</li>
+                         <li><b>Pass Ball:</b> Two robot cars, placed in two different regions, can pass a ball to each other. The robot car will consistently receive the same location information from a web cam via WIFI communication. Theoretically, with good control of the speed and orientation of two robot cars, they can pass the ball forever until battery dies.</li>
+                    </ul>
+				</div><!-- col-sm-9 -->                
+<!--
+                <div class="gallery">
+                    <cell>
+                        <figure>
+                          <img src="images/project/turtlebot/1.jpeg">
+                            <figcaption>Rviz visualization</figcaption>
+                        </figure>
+                    </cell>
+                    <cell>
+                        <figure>
+                            <img src="images/project/turtlebot/2.jpeg">
+                            <figcaption>Camera Calibration</figcaption>
+                        </figure>
+                    </cell>
+                    <cell>
+                        <figure>
+                            <img src="images/project/turtlebot/tf_tree.JPG"><figcaption>TF trees</figcaption>
+                        </figure>
+                    </cell>
                 </div>
+-->
 			</div><!-- row -->    
 		</div><!-- container -->
 	</section><!-- about-section -->

@@ -102,6 +102,11 @@ b.max-bold{ font-weight: 700; }
 .margin-b-30{ margin-bottom: 30px; }
 .margin-b-50{ margin-bottom: 50px; }
 
+.projectsection .margin-b-50 > li{
+    display: list-item;
+    list-style-type: disc;
+}
+
 .margin-tb-30{ margin-top: 30px; margin-bottom: 30px; }
 
 .font-yellow{ color: #FFA600; }
