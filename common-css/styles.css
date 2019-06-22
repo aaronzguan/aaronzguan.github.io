@@ -83,7 +83,7 @@ b.max-bold{ font-weight: 700; }
 2. COMMONS FOR PAGE DESIGN
 --------------------------------- */
 
-.section{ padding: 100px 0 50px; border-bottom: 1px solid #ddd; }
+.section{ padding: 80px 0 50px 0; border-bottom: 1px solid #ddd; }
 
 .section .heading{ margin-bottom: 60px; }
 
@@ -121,7 +121,7 @@ b.max-bold{ font-weight: 700; }
 3. INTRO SECTION
 --------------------------------- */
 
-.intro-section{ padding: 50px 0; position: relative; 
+.intro-section{ padding: 50px 0 0 0; position: relative; 
 	z-index: 1; padding-top:6rem;}
 
 .intro-section:before{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; left: 0; 
@@ -180,6 +180,7 @@ b.max-bold{ font-weight: 700; }
 
 .radial-progress .progress-title{ position: absolute; top: 50%; left: 50%; width: 100%;
 	letter-spacing: 0; text-align: center; transform: translate(-50%, 15px); color: #777; }
+
 
 .about-section a{text-decoration: none; color: #FFA804;}
 .about-section a:focus, .about-section a:active, .about-section a:hover{text-decoration: underline;}
