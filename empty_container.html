@@ -52,7 +52,7 @@
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="empty_container.html">Empty Container</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="3105car.html">STM32 Robot Car</a>
+                  <a class="dropdown-item" href="3105car.html">STM32 Robot Car</a>
                     <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="turtlebot3.html">Turtlebot3</a>
                     <div class="dropdown-divider"></div>
@@ -75,38 +75,46 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-5">
 					<div class="heading">
-						<h3><b>Quadrotor with Pixhawk4</b></h3>
-                        <span class="heading-meta">FH Aachen University of Applied Sciences<br>Aachen, Germany</span>
+						<h3><b>Empty Container using Pandas Robot Arm</b></h3>
+                        <span class="heading-meta">Robotics Institute<br>Carnegie Mellon University</span>
+                        <br>
+                        <span><a class="downlad-btn" href="https://github.com/aaronzguan/EmptyContainer">Source Code</a></span>
 					</div>
                 
 				</div><!-- col-sm-3 -->
                 
-                <div class="margin-b-50" align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/vjcNewfF6g8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-				<div class="col-sm-12 col-md-9">
-					<p class="margin-b-50">A ROS-based quadrotor with a Pixhawk4 flight controller that can automatically take-off, land, and fly by detecting AR-Tags. QGroundControl is used for RC and sensor calibration. The communication between the flight controller and the Odroid is established based on the MAVLink protocol.</p>
-				</div><!-- col-sm-9 -->
+                <div class="margin-b-50" align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/SxaQyB_vTLc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 
-                <div class="gallery">
-                    <cell>
-                        <figure>
-                            <img src="images/project/quadrotor/architecture.jpeg">
-                            <figcaption>Quadrotor architecture</figcaption>
-                        </figure>
-                    </cell>
-                    <cell>
-                        <figure>
-                            <img src="images/project/quadrotor/qcgroundcontrol.png"><figcaption>QGroundControl Simulation</figcaption></figure>
-                    </cell>
-                    <cell>
-                        <figure>
-                            <img src="images/project/quadrotor/rviz.png"><figcaption>Rviz visualization and testing</figcaption>
-                        </figure>
-                    </cell>
-                </div>
+				<div class="col-sm-12 col-md-9">
+					<p class="margin-b-30">Pick and place robots are being increasingly used in applications such as manufacturing, warehouse automation and e-commerce order fulfillment. They speed up the process of picking up parts or items and placing them in other locations. By handling repetitive tasks, pick and place robots free up human workers to focus on more complex work and thus increase the overall system productivity.</p>
+                    
+                    <p class="margin-b-30">The goal for this project is to move objects between containers. Specifically, the forward task is to move objects from the middle container to containers on the side, and the reset task is to move objects back from the side containers to the middle one. The robot should switch to the other task when the current container is empty.</p>
+                    
+                    <p class="margin-b-30">We implemented the state-machine for both forward and resetting task. The major approaches for this project is listed below:</p>
+                    
+                     <ul class="margin-b-50">
+                         <li><b>ResNet-50-based binary classifier:</b> Trained the pre-trained ResNet-50 model to check if the container is empty or not using the RGB image from the wrist camera on the robot.</li>
+                         <li><b>GQCNN 2.0 optimal pose predictor:</b> Used the pre-trained GQCNN 2.0 model to predict the optimal grasping pose using the depth image from the wrist camera on the robot.</li>
+                         <li><b>RRT trajectory planner:</b> Used the RRT algorithm to plan the trajectory for robot to move towards the target pose and grasp the objects.</li>
+                    </ul>
+				</div><!-- col-sm-9 --> 
+                
 			</div><!-- row -->    
 		</div><!-- container -->
 	</section><!-- about-section -->
+    
+    <div class="height_figure">
+        <figure>
+            <img src="images/project/empty_container/state-machine.png">
+            <figcaption>Overview of the state-machine</figcaption>
+        </figure>
+    </div>
+    <div class="width_figure">
+        <figure>
+            <img src="images/project/empty_container/gqcnn.png">
+            <figcaption>Overview of the grasping prediction pipeline</figcaption>
+        </figure>
+    </div>
     
 	<footer>
 		<p class="copyright">Copyright &copy;Aaron Z Guan <script>document.write(new Date().getFullYear());</script>
